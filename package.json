@@ -1,0 +1,22 @@
+{
+  "name": "another-weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/al-moreno/another-weather-app.git"
+  },
+  "author": "Ana Laura Moreno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/al-moreno/another-weather-app/issues"
+  },
+  "homepage": "https://github.com/al-moreno/another-weather-app#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
