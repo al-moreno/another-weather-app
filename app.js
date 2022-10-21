@@ -12,15 +12,21 @@ app.get('/', function (req, res) {
     const url = `https://api.openweathermap.org/data/2.5/forecast?q=austin&appid=${key}&units=imperial`;
 
     https.get(url, function (response) {
-        console.log(response);
+        // console.log(response);
 
-        response.on('data', function (data) {
+        response.on("data", function (data) {
             const weatherData = JSON.parse(data);
-            const temp = weatherData.list[0].main;
-            console.log(temp);
+            // console.log(weatherData);
+            const temp = weatherData.list[0].main.temp;
+            // console.log(temp);
+            const weatherDescription = weatherData.list[0].weather;
+            console.log(weatherDescription);
+            res.write("<h2>the temp is "+ temp +"</h2> ");
+            res.send()
+            
         })
     })
-    res.send("Server Is up and running");
+    // res.send("Server Is up and running");
 })
 
 
