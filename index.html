@@ -28,37 +28,41 @@
 
 <body>
     <div class="background-color">
+        <!-- Header Section -->
         <header>
             <div class=" p-5 bg-transparent text-white rounded">
                 <h1 class="p-4 text-center">Weather Dashboard</h1>
             </div>
-
         </header>
 
+        <!-- Main Section -->
         <main>
             <div class="container-fluid">
                 <div class="row">
-                    <aside class="col-lg-3 ">
-                        <h5 class="mt-2 text-center">Search for a City:</h5>
-                        <!-- <div class="form-inline form-group">
+                    <form class="col-lg-3" action="/" method="post">
+
+                        <!-- <h5 class="mt-2 text-center">Search for a City:</h5>
+                      <div class="form-inline form-group">
                        <input class="form-control" type="text" id="search-value" />
                         <button class="mt-2 btn btn-primary" id="search-button">
                             <i class="fa fa-search"></i>
                         </button> 
-                    </div>-->
+                    </div> -->
 
 
+                        <h5 class="mt-2 text-center text-light">Search for a City:</h5>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" id="search-value" placeholder="Enter City Here"
-                                aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <span class="input-group-text btn-primary" id="search-button"> <i
-                                    class="fa fa-search"></i></span>
+                            <label for="city-input"></label>
+                            <input type="text" name="cityName" class="form-control" id="city-input"
+                                placeholder="Enter City Here">
+                            <button class="input-group-text btn-primary" type="submit" id="search-button">
+                                <i class="fa fa-search"></i></button>
                         </div>
 
 
 
                         <ul class="list-group history" id="history"></ul>
-                    </aside>
+                    </form>
 
                     <div class="col-lg-9">
                         <div id="today" class="mt-3"></div>
@@ -73,10 +77,11 @@
 
         <!-- footer section start -->
         <footer class=" mb-2 text-center position-absolute bottom-0 start-50 translate-middle-x">
-            <span>Created By <a href="">Ana Moreno</a> | <span class="far fa-copyright"></span> 2021 All rights
+            <span>Created By <a href="">Ana Moreno</a> | <span class="far fa-copyright"></span> 2022 All rights
                 reserved.</span>
         </footer>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
