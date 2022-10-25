@@ -2,4 +2,6 @@
     background: rgb(34,193,195);
 background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(137,254,255,1) 14%, rgba(34,192,164,1) 41%, rgba(27,114,149,1) 75%, rgba(19,22,96,1) 100%);
 background-repeat: no-repeat;
+background-size: cover;
+margin-bottom: 30%;
 }
